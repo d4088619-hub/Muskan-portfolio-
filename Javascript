@@ -1,0 +1,11 @@
+// Add event listener to project images
+document.querySelectorAll('.project-image').forEach((image) => {
+  image.addEventListener('mouseover', () => {
+    // Add hover effect
+    image.classList.add('hover');
+  });
+  image.addEventListener('mouseout', () => {
+    // Remove hover effect
+    image.classList.remove('hover');
+  });
+});
